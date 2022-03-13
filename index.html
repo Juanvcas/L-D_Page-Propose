@@ -5,12 +5,170 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Styles -->
     <link rel="stylesheet" href="./css/home/phone.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
+        <!--
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+        -->
 
 </head>
-<body>
-    
+<body class="container">
+    <header id="header" class="header">
+        <figure class="header__logo">
+            <img src="https://i.postimg.cc/xjhcHNdg/Logo.png" alt="logo_L&D">
+        </figure>
+        <span id="nav__bttn" class="nav__open" onclick="navMenu()"></span>
+        <nav id="nav" class="nav">
+            <ul class="nav__ul">
+                <span class="nav__close" onclick="navMenu()"></span>
+                <li><a href="">Productos</a></li>
+                <li><a href="">Servicios</a></li>
+                <li><a href="">Proyectos</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Pago en Linea</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="aside">
+        <div class="aside__opt">
+            <span></span>
+            <a href="">Catalogo</a>
+        </div>
+        <div class="aside__opt">
+            <span></span>
+            <a href="">Lineas</a>
+        </div>
+        <div class="aside__opt">
+            <span></span>
+            <a href="">Proyectos</a>
+        </div>
+        <div class="aside__opt">
+            <span></span>
+            <a href="">Información</a>
+        </div>
+    </aside>
+    <main class="main">
+        <section class="main__bnnr">
+            <img src="https://i.postimg.cc/8C7YFCz8/BNR-Post01-1.png" alt="Banner Image">
+            <div class="bnnr__ttl">
+                <h1>Home Office</h1>
+                <p>Lo funcional prevalece en el tiempo.</p>
+                <a href="">Conocela</a>
+            </div>
+        </section>
+        <section class="main__ctl">
+            <h2>Creamos tu ambiente de trabajo soñado</h2>
+            <article class="ctl__prod">
+                <a href="">
+                    <h3>Sillas</h3>
+                </a>
+                <a href="">
+                    <h3>Escritorios</h3>
+                </a><a href="">
+                    <h3>Divisiones</h3>
+                </a><a href="">
+                    <h3>Espacios Colaborativos</h3>
+                </a><a href="">
+                    <h3>Salas de Reuniones</h3>
+                </a><a href="">
+                    <h3>Recepciones</h3>
+                </a><a href="">
+                    <h3>Almacenamiento</h3>
+                </a><a href="">
+                    <h3>Accesorios</h3>
+                </a>
+            </article>
+        </section>
+        <section class="main__lines">
+            <h2>Somos Lineas</h2>
+            <article class="lines__slide">
+                <div>
+                    <h3>Covo</h3>
+                    <p></p>
+                </div>
+                <img src="" alt="Linea Covo">
+            </article>
+            <article class="lines__slide">
+                <div>
+                    <h3>Button</h3>
+                    <p></p>
+                </div>
+                <img src="" alt="Linea Button">
+            </article>
+            <article class="lines__slide">
+                <div>
+                    <h3>Covo</h3>
+                    <p></p>
+                </div>
+                <img src="" alt="Linea Traza">
+            </article>
+            <article class="lines__slide">
+                <div>
+                    <h3>Covo</h3>
+                    <p></p>
+                </div>
+                <img src="" alt="Linea Slide">
+            </article>
+            <div class="lines__bttn">
+                <a href="">Conoce mas de nuestras Lineas</a>
+            </div>
+        </section>
+        <section class="main__pyct">
+            <h2>Proyectos</h2>
+            <article class="pyct__slide">
+                <h3>Bayit</h3>
+                <a href=""></a>
+            </article>
+            <article class="pyct__slide">
+                <h3>Bayit</h3>
+                <a href=""></a>
+            </article>
+            <article class="pyct__slide">
+                <h3>Bayit</h3>
+                <a href=""></a>
+            </article>
+            <article class="pyct__slide">
+                <h3>Bayit</h3>
+                <a href=""></a>
+            </article>
+            <div class="pyct__bttn">
+                <a href="">Mas Proyectos</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="" class="footer__logo"></a>
+        <article class="footer__info">
+            <a href="">Contactanos</a>
+            <a href="">Sobre Nosotros</a>
+            <a href="">Garantias</a>
+            <a href="">Politica de Privacidad</a>
+        </article>
+        <article class="footer__info">
+            <p>
+                Medellin <br>
+                Carrera 50C 10 Sur - 141 <br>
+                Unidad Industrial la Aguacatala <br>
+                Teléfono: (60) (4) 4445842 ext 102 <br>
+                Celular: 3104015338 <br>
+                servicliente@lineasydisenos.com.co <br>
+            </p>
+        </article>
+        <article class="footer__info">
+            <p>
+                Horario de atención <br><br>
+                Lunes a Viernes 7:00 am - 5:00 pm <br><br>
+                Siguenos en:
+            </p>
+        </article>
+    </footer>
+    <script src="./scripts/header.js"></script>
 </body>
 </html>
