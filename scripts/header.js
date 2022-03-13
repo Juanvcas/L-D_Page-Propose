@@ -1,8 +1,18 @@
+window.addEventListener("load",() => {
+    const nav = document.getElementById("nav");
+    if (screen.width >= 1024) {
+        nav.style.width = "auto";
+    } else {
+        nav.style.width = "0vw";
+    }
+})
+
 window.addEventListener("resize",() => {
     const nav = document.getElementById("nav");
     if (screen.width >= 1024) {
         nav.style.width = "auto";
-        console.log(screen.width);
+    } else {
+        nav.style.width = "0vw";
     }
 })
 
